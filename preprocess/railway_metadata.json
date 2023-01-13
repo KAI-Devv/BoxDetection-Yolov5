@@ -1,0 +1,323 @@
+{
+    "categories": [
+        {
+            "supercategory": "empty",
+            "id": 0,
+            "name": "empty",
+            "name_kor": "빈값",
+            "number_normal": 0.01,
+            "number_abnormal": 0.01,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "polygon"
+        },
+        {
+            "supercategory": "도시철도",
+            "id": 1,
+            "name": "rail",
+            "name_kor": "레일",
+            "number_normal": 8000,
+            "number_abnormal": 2000,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "polygon"
+        },
+        {
+            "supercategory": "도시철도",
+            "id": 2,
+            "name": "lubricator",
+            "name_kor": "도유기",
+            "number_normal": 800,
+            "number_abnormal": 200,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "도시철도",
+            "id": 3,
+            "name": "weld_zone",
+            "name_kor": "용접부",
+            "number_normal": 3200,
+            "number_abnormal": 800,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "도시철도",
+            "id": 4,
+            "name": "turnout_joint_bar",
+            "name_kor": "분기부 이음매판",
+            "number_normal": 4000,
+            "number_abnormal": 1000,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "도시철도",
+            "id": 5,
+            "name": "bolt-nut",
+            "name_kor": "볼트ㆍ너트",
+            "number_normal": 2400,
+            "number_abnormal": 600,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "도시철도",
+            "id": 6,
+            "name": "pandrol_e-clip",
+            "name_kor": "팬드롤 e-clip",
+            "number_normal": 4000,
+            "number_abnormal": 1000,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "도시철도",
+            "id": 7,
+            "name": "Insulation_block",
+            "name_kor": "절연블록",
+            "number_normal": 3200,
+            "number_abnormal": 800,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "도시철도",
+            "id": 8,
+            "name": "screw_spike",
+            "name_kor": "나사스파이크",
+            "number_normal": 3200,
+            "number_abnormal": 800,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "도시철도",
+            "id": 9,
+            "name": "guardrail_bolt-nut",
+            "name_kor": "가드레일 볼트ㆍ너트 ",
+            "number_normal": 4000,
+            "number_abnormal": 1000,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "도시철도",
+            "id": 10,
+            "name": "hexagon_head_bolt",
+            "name_kor": "육각볼트",
+            "number_normal": 1600,
+            "number_abnormal": 400,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "도시철도",
+            "id": 11,
+            "name": "tie",
+            "name_kor": "침목",
+            "number_normal": 1600,
+            "number_abnormal": 400,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "일반철도",
+            "id": 12,
+            "name": "rail",
+            "name_kor": "레일",
+            "number_normal": 5600,
+            "number_abnormal": 1400,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "polygon"
+        },
+        {
+            "supercategory": "일반철도",
+            "id": 13,
+            "name": "joint_bar",
+            "name_kor": "이음매판",
+            "number_normal": 6400,
+            "number_abnormal": 1600,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "일반철도",
+            "id": 14,
+            "name": "bolt-nut",
+            "name_kor": "볼트너트",
+            "number_normal": 5600,
+            "number_abnormal": 1400,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "일반철도",
+            "id": 15,
+            "name": "pandrol_e-clip",
+            "name_kor": "팬드롤 e-clip",
+            "number_normal": 4000,
+            "number_abnormal": 1000,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "일반철도",
+            "id": 16,
+            "name": "Insulation_block",
+            "name_kor": "절연블록",
+            "number_normal": 3200,
+            "number_abnormal": 800,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "일반철도",
+            "id": 17,
+            "name": "screw_spike",
+            "name_kor": "나사스파이크",
+            "number_normal": 4000,
+            "number_abnormal": 1000,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "일반철도",
+            "id": 18,
+            "name": "tie",
+            "name_kor": "침목",
+            "number_normal": 4800,
+            "number_abnormal": 1200,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "고속철도",
+            "id": 19,
+            "name": "rail",
+            "name_kor": "레일",
+            "number_normal": 2400,
+            "number_abnormal": 600,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "polygon"
+        },
+        {
+            "supercategory": "고속철도",
+            "id": 20,
+            "name": "weld_zone",
+            "name_kor": "용접부",
+            "number_normal": 1600,
+            "number_abnormal": 400,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "고속철도",
+            "id": 21,
+            "name": "pandrol_e-clip",
+            "name_kor": "팬드롤 e-clip",
+            "number_normal": 800,
+            "number_abnormal": 200,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "고속철도",
+            "id": 22,
+            "name": "FAST_clip",
+            "name_kor": "FAST clip",
+            "number_normal": 1600,
+            "number_abnormal": 400,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "고속철도",
+            "id": 23,
+            "name": "system300-1",
+            "name_kor": "system300-1",
+            "number_normal": 2400,
+            "number_abnormal": 600,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "고속철도",
+            "id": 24,
+            "name": "screw_spike",
+            "name_kor": "나사스파이크",
+            "number_normal": 1600,
+            "number_abnormal": 400,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "고속철도",
+            "id": 25,
+            "name": "Insulation_block",
+            "name_kor": "절연블록",
+            "number_normal": 2400,
+            "number_abnormal": 600,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "고속철도",
+            "id": 26,
+            "name": "tie",
+            "name_kor": "침목",
+            "number_normal": 1600,
+            "number_abnormal": 400,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        },
+        {
+            "supercategory": "경전철",
+            "id": 27,
+            "name": "rail",
+            "name_kor": "레일",
+            "number_normal": 6400,
+            "number_abnormal": 1600,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "polygon"
+        },
+        {
+            "supercategory": "경전철",
+            "id": 28,
+            "name": "fastening_device",
+            "name_kor": "체결장치",
+            "number_normal": 5600,
+            "number_abnormal": 1400,
+            "normal_ratio": 0.1,
+            "abnormal_ratio": 0.1,
+            "input_type": "box"
+        }
+    ]
+}
