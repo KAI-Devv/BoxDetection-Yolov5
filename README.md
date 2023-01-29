@@ -2,10 +2,11 @@
 
 # 사용방법
 ## 설치방법 1
+```
 https://github.com/KAI-Devv/BoxDetection-Yolov5.git<br>
 cd BoxDetection-Yolov5 <br>
 pip install -r requirements.txt <br>
-
+```
 ## 설치방법 2 (Docker를 활용한 설치)
 아래 링크를 다운로드 하여 도커 설치를 따라해주시면 됩니다.
 1) 철도 선로 데이터셋 : https://github.com/KAI-Devv/BoxDetection-Yolov5/files/10401838/_yolo_225.docx
@@ -43,24 +44,38 @@ python preprocess/preprocess2.py {데이터셋 폴더 경로}_data {메타데이
     ```
 
 ## 학습
+학습을 위해 아래 스크립트 포맷 및 예시를 참고합니다.
+
 ```
 python -m torch.distributed.run --nproc_per_node {GPU 개수} --master_port 1 train.py --data {preprocess2.py를 통해 획득된 data.yaml 파일의 경로} --img {이미지 width값} --weights {모델 파일 경로} --device {GPU index list} --batch-size {batch 수} --epochs {epoch 수}
 ```
 예시)
+1) 철도 선로 데이터셋 <br>
 ```
-python -m torch.distributed.run --nproc_per_node 4 --master_port 1 train.py --data ../../../datasets/railway/railway_data/data.yaml --weights railway.pt --device 0,1,2,3 --batch-size 64 --epochs 100
+python train.py --data ../../../dataset/railway_data/data.yaml --cfg yolov5m --device 0 --batch-size 64 --epochs 100
 ```
+2) 전차선 / 애자 데이터셋 <br>
+```
+python train.py --data ../../../dataset/catenary_data/data.yaml --cfg yolov5m --device 0 --batch-size 64 --epochs 100
+```
+
 ## 유효성 검증
+유효성 검증은 아래 스크립트 포맷 및 예시를 참고합니다.
 ```
 python validate-railway-dataset.py --data {preprocess2.py를 통해 획득된 data.yaml 파일의 상위 폴더} --data_type {railway or catenary} --weights {모델 파일 경로} --task test
 ```
 예시)
+1) 철도 선로 데이터셋 <br>
 ```
 python validate-railway-dataset.py --data ../../../dataset/railway_data --data_type railway --weights railway.pt --task test
 ```
+2) 전차선 / 애자 데이터셋 <br>
+```
+python validate-railway-dataset.py --data ../../../dataset/catenary_data --data_type catenary --weights catenary.pt --task test
+```
 
 ## 테스트 및 적용
-To write the results to the new file, add progress bar status, save both concatenated and resulting video in desired path's, use newdet.py. Otherwise detect.py <br>
+테스트는 아래 스크립트를 참고하며, 원하는 모델과 이미지 또는 비디오를 적용합니다. <br>
 ```
 python detect.py(newdet.py) --weights {모델 파일 경로} --source {적용 파일 경로 (파일 또는 폴더)} --data {preprocess2.py를 통해 획득된 data.yaml 파일의 경로}
 ```
@@ -99,11 +114,12 @@ mAP (0.75 IoU 기준)
 
 ## Reference
 YOLOv5모델을 사용하였으며, 학습데이터 적용 및 유효성 검증 수행을 위한 코드의 커스터마이징 작업이 수행되었습니다. <br>
+기존 YOLOv5 소스코드에서 전처리 및 유효성 검증을 위해 preprocess 폴더 내 파일들, validate-railway-dataset.py 및 newdet.py 코드가 추가되었습니다.
 관련 링크: https://github.com/ultralytics/yolov5
 
 ## License
 SPDX-FileCopyrightText: © 2022 Seunghwa Jeong <<sh.jeong@kaistudio.co.kr>> <br>
-SPDX-License-Identifier: GPL-3.0 <br>
+SPDX-License-Identifier: GPL-3.0 (오픈 소스 또는 academic project를 위해 사용 시) <br>
 
-YOLOv5에서 명시된 GPL-3.0 License를 따릅니다. <br>
-(GPL-3.0 Licence 전문: https://github.com/ultralytics/yolov5/blob/master/LICENSE)
+YOLOv5에서 명시된것 처럼 오픈 소스 또는 academic 목적으로 사용 시, GPL-3.0 License를 따르며 상업적 용도로 활용 시 YOLOv5에서 제공하는 Enterprise License를 따라야 합니다. <br>
+(GPL-3.0 및 Enterprise Licence 전문: https://ultralytics.com/license)

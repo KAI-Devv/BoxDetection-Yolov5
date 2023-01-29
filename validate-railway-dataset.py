@@ -396,10 +396,10 @@ def run(
 
     category_info = []
     if data_type == 'railway':
-        with open('railway_metadata.json', 'r', encoding='utf-8') as curr_file:
+        with open('preprocess/railway_metadata.json', 'r', encoding='utf-8') as curr_file:
             category_info = json.load(curr_file)['categories']
     else:
-        with open('catenary_metadata.json', 'r', encoding='utf-8') as curr_file:
+        with open('preprocess/catenary_metadata.json', 'r', encoding='utf-8') as curr_file:
             category_info = json.load(curr_file)['categories']
 
 
@@ -520,10 +520,10 @@ def convert_to_yolov5_format(root_folder, dataset_name):
     category_info = []
     category = []
     if dataset_name == 'railway':
-        with open('railway_metadata.json', 'r', encoding='utf-8') as curr_file:
+        with open('preprocess/railway_metadata.json', 'r', encoding='utf-8') as curr_file:
             category_info = json.load(curr_file)['categories']
     else:
-        with open('catenary_metadata.json', 'r', encoding='utf-8') as curr_file:
+        with open('preprocess/catenary_metadata.json', 'r', encoding='utf-8') as curr_file:
             category_info = json.load(curr_file)['categories']
 
     for obj in category_info:
